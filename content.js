@@ -169,7 +169,7 @@ const PORTFOLIO = {
     "duration": "1 hour",
     "mode": "Online Webinar via Google Meet",
     "speaker": "Mr. Maeron Joseph Reyes",
-    "screenshot": "assets/certifications/code-create-deploy.jpg"
+    "screenshot": "code-create-deploy.jpg"
    },
    {
     "title": "Digital Office Mastery: Essential Skills for Computer & Administrative Staff",
@@ -178,7 +178,7 @@ const PORTFOLIO = {
     "duration": "1 hour",
     "mode": "Online Webinar via Google Meet",
     "speaker": "Mr. Ryan Jeffrey Ricafort",
-    "screenshot": "assets/certifications/digital-office.jpg"
+    "screenshot": "digital-office.jpg"
    },
    {
     "title": "The Future of Network Security, AI, Automation and Zero Trust",
@@ -187,7 +187,7 @@ const PORTFOLIO = {
     "duration": "2 hours",
     "mode": "Online Webinar via Google Meet",
     "speaker": "",
-    "screenshot": "assets/certifications/network-security.jpg"
+    "screenshot": "network-security.jpg"
    },
    {
     "title": "Next Gen Arduino: Innovation Through Embedded Technology",
@@ -196,7 +196,7 @@ const PORTFOLIO = {
     "duration": "1 hour",
     "mode": "Online Webinar via Google Meet",
     "speaker": "Ms. Jasmine Kate Patiño",
-    "screenshot": "assets/certifications/arduino.jpg"
+    "screenshot": "arduino.jpg"
    },
    {
     "title": "Linux & System Administration: Master the Command Line",
@@ -205,7 +205,7 @@ const PORTFOLIO = {
     "duration": "2 hours",
     "mode": "Online Webinar via Google Meet",
     "speaker": "Mr. Jhon Bert Villarosa",
-    "screenshot": "assets/certifications/linux-sysadmin.jpg"
+    "screenshot": "linux-sysadmin.jpg"
    }
   ]
  },
