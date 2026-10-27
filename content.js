@@ -13,7 +13,7 @@ const PORTFOLIO = {
   "phone": "",
   "showEmail": true,
   "showPhone": false,
-  "photo": "assets/profile.jpg",
+  "photo": "profile.jpg",
   "photoAlt": "Portrait of Prince Carl Albero",
   "resume": {
    "available": false,
