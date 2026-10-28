@@ -158,14 +158,6 @@ const PORTFOLIO = {
      "fileLabel": "View workbook"
     }
    },
-   {
-    "name": "AI-Assisted Work",
-    "level": "beginner",
-    "icon": "✦",
-    "items": [
-     "AI tools with verification and an AI usage log"
-    ]
-   }
   ]
  },
  "certifications": {
