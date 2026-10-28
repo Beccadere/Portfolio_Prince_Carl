@@ -212,24 +212,55 @@ const PORTFOLIO = {
  "projects": [
   {
    "number": 1,
-   "published": false,
-   "title": "Project 1 — Web / Application (to be added)",
-   "category": "",
-   "type": "",
-   "role": "",
-   "overview": "",
-   "problem": "",
-   "solution": "",
-   "process": [],
-   "challenges": [],
-   "features": [],
-   "technologies": [],
+   "published": true,
+   "title": "Group Project: Aria's Cafe Ordering and Reservation Website",
+   "category": "Web Development",
+   "type": "Group project",
+   "role": "I worked with my group on the website's frontend: the page layouts and styling in HTML and CSS, and the JavaScript for the menu, cart, checkout, and reservation form.",
+   "overview": "A multi-page website for a cafe. Customers can browse the menu, add drinks to a cart, check out, and book a table. It runs entirely in the browser, with no backend.",
+   "problem": "A small cafe needs an easy way for customers to see the menu, order, and reserve a table online without calling or visiting first.",
+   "solution": "A responsive site with Home, About, News, Menu, Contact, and Reservation pages. The menu, carts, orders, and reservations are saved in the browser's localStorage, so the full ordering flow can be demonstrated without a server.",
+   "process": [
+    "Plan the pages: Home, About (history, mission and vision), News, Menu, Contact, and Reservation",
+    "Build the page layouts and styling with HTML and CSS, including a sticky navigation bar, dropdown menu, and featured-items section",
+    "Write JavaScript to load the menu, with default items on the first visit, and to show it as cards",
+    "Add a cart for each logged-in user, then a checkout form with Cash on Delivery, GCash, and Maya options",
+    "Add the reservation form and save each booking with a Pending status"
+   ],
+   "challenges": [
+    {
+     "challenge": "There is no backend, but menu items, carts, orders, and reservations still had to be saved",
+     "solution": "Stored them as JSON in the browser's localStorage, so the full flow works as a demo. The trade-off is that the data stays on one device and is not secure."
+    },
+    {
+     "challenge": "Each customer needed a separate cart",
+     "solution": "Saved the cart under a key built from the logged-in user's email, so different accounts do not share items."
+    },
+    {
+     "challenge": "Online payment could not be real, but the order still needed a payment record",
+     "solution": "Required an address, a phone number, and a reference number for GCash and Maya before the order can be placed. No real payment is processed."
+    }
+   ],
+   "features": [
+    "Menu loaded from stored data, with default items",
+    "Cart per user with add, remove, and running total",
+    "Checkout with COD, GCash, and Maya options and form validation",
+    "Table reservation form",
+    "Profile menu with login and logout links",
+    "Responsive layout"
+   ],
+   "technologies": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "localStorage"
+   ],
    "repo": "",
    "demo": "",
    "docs": "",
-   "demoNote": "",
+   "demoNote": "Frontend prototype. Data is stored in the browser only, and payments are not processed.",
    "screenshot": "",
-   "lessons": ""
+   "lessons": "A frontend-only prototype is good for showing how an ordering flow works, but real orders need a backend and a database for security, shared data, and real payments. Working in a group also taught me to keep file names and image paths consistent so the pages do not break."
   },
   {
    "number": 2,
