@@ -1,444 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>Prince Carl Albero Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <!-- Sets data-theme before first paint to avoid a flash; must stay in <head> -->
-  <script src="theme-init.js"></script>
+  <meta charset="UTF-8">
+  <title>Aria's Cafe</title>
+  <link rel="stylesheet" href="dcsa.css">
+<script src="aria-local.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="bg-paper" aria-hidden="true"></div>
-
-  <noscript>
-    <div class="noscript-note">
-      This portfolio uses a small amount of JavaScript to render its content from
-      <span class="mono">content.js</span>. Please enable JavaScript to view the sections below.
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="img/olog.jpg" alt="Aria's Cafe Logo" style="width: 50px; height: 50px;">
+      <strong>Aria's Cafe</strong>
     </div>
-  </noscript>
-
-  <!-- ======================= HEADER ======================= -->
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#home" aria-label="Prince Carl Albero — home">
-        <span class="brand-mark" aria-hidden="true">PA</span>
-        <span><small>Portfolio</small><strong>Prince Carl Albero</strong></span>
-      </a>
-
-      <nav aria-label="Primary">
-        <ul class="nav-links">
-          <li><a data-nav href="#home" class="active">Home</a></li>
-          <li><a data-nav href="#about">About</a></li>
-          <li><a data-nav href="#skills">Skills</a></li>
-          <li><a data-nav href="#certifications">Certifications</a></li>
-          <li><a data-nav href="#projects">Projects</a></li>
-          <li><a data-nav href="#problem-solving">Cases</a></li>
-          <li><a data-nav href="#career">Career</a></li>
-          <li><a data-nav href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="nav-cta">
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
-          <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-          </svg>
-          <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-            <circle cx="12" cy="12" r="4.2" />
-            <path d="M12 1.8v2.4M12 19.8v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M1.8 12h2.4M19.8 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7" />
-          </svg>
-        </button>
-        <a class="btn btn-ghost btn-sm" id="navGithub" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a class="btn btn-primary btn-sm" href="#contact">Contact</a>
-        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">☰</button>
+    
+    <div class="nav-buttons">
+      <button class="btn" onclick="window.location.href='index.html'">Home</button>
+      <div class="dropdown">
+        <button class="btn">About Us ▼</button>
+        <div class="dropdown-content">
+          <button onclick="window.location.href='history.html'">Our History</button>   
+          <button onclick="window.location.href='mission.html'">Our Mission & Vision</button>
+        </div>
       </div>
+
+      <button class="btn" onclick="window.location.href='news.html'">News & Articles</button>
     </div>
 
-    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
-      <a data-nav href="#home">Home</a>
-      <a data-nav href="#about">About</a>
-      <a data-nav href="#education">Education</a>
-      <a data-nav href="#skills">Skills</a>
-      <a data-nav href="#certifications">Certifications</a>
-      <a data-nav href="#projects">Projects</a>
-      <a data-nav href="#problem-solving">Problem-Solving Cases</a>
-      <a data-nav href="#security">Cybersecurity Awareness</a>
-      <a data-nav href="#ai">AI Literacy</a>
-      <a data-nav href="#presence">GitHub &amp; LinkedIn</a>
-      <a data-nav href="#resume">Resume</a>
-      <a data-nav href="#career">Career Plan</a>
-      <a data-nav href="#reflection">Reflection</a>
-      <a data-nav href="#contact">Contact</a>
-    </nav>
-  </header>
+    <button class="btn" onclick="window.location.href='menu.html'">Menu</button>
+  </div>
 
-  <main id="main">
+    <button class="btn" onclick="window.location.href='contact.html'">Contact Us</button>
+  </div>
 
-    <!-- ======================= 01 HERO ======================= -->
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow"><span class="pulse" aria-hidden="true"></span> <span id="heroAvailability">Open to internship / entry-level roles</span></span>
+  <button class="btn" onclick="window.location.href='reservation.html'">Reservation</button>
+</div>
 
-          <h1 id="hero-title">Hi, I&rsquo;m <span class="grad">Prince Carl Albero</span></h1>
-          <p class="hero-role">BSIT Student / Technical Support</p>
-
-          <p class="hero-lede">
-            I&rsquo;m a BSIT student specializing in technical support, building my skills in troubleshooting, data analysis, and web development.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View My Projects</a>
-            <a class="btn btn-ghost" id="heroResumeBtn" href="#resume" hidden>Download Resume</a>
-            <a class="btn btn-ghost" id="heroGithub" href="#" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a>
-            <a class="btn btn-ghost" id="heroLinkedin" href="#" target="_blank" rel="noopener noreferrer">LinkedIn &#8599;</a>
-            <a class="btn btn-ghost" href="#contact">Contact</a>
-          </div>
-
-          <div class="hero-meta">
-            <span><span id="heroLocation">Philippines</span></span>
-            <a id="heroEmailLink" href="#" hidden></a>
-          </div>
-        </div>
-
-        <figure class="portrait">
-          <div class="portrait-frame">
-            <!-- Profile avatar. `personal.photo` in content.js supplies the file.
-                 If the image is missing or fails to load, the initials stay visible,
-                 so the panel is never empty or broken. -->
-            <div class="portrait-photo" id="heroAvatar">
-              <span class="portrait-initials" aria-hidden="true">PA</span>
-            </div>
-          </div>
-          <figcaption class="portrait-caption">
-            <strong>Prince Carl Albero</strong>
-            <span>BSIT Student &middot; Philippines</span>
-          </figcaption>
-          <div class="now-card">
-            <span class="now-label">Currently</span>
-            <p class="now-line">Studying BSIT at Datamex College of Saint Adeline</p>
-            <p class="now-line">Documenting my projects and troubleshooting cases</p>
-            <p class="now-line">Looking for an internship or entry-level role</p>
-          </div>
-          <div class="portrait-tags">
-            <span class="tag">Technical support</span>
-            <span class="tag">Problem-solving</span>
-            <span class="tag">Responsible AI</span>
-          </div>
-        </figure>
-      </div>
-    </section>
-
-    <!-- ======================= 02 ABOUT ======================= -->
-    <section class="block" id="about" aria-labelledby="about-t">
-      <div class="container">
-        <p class="kicker reveal">01 — About Me</p>
-        <h2 class="h2 reveal" id="about-t">A student who prefers to understand the problem before fixing it.</h2>
-        <p class="sub reveal">Background, strengths, and where I am heading.</p>
-
-        <div class="grid-2">
-          <article class="card reveal">
-            <h3 class="card-title">Profile</h3>
-            <div id="aboutParagraphs" class="prose"></div>
-            <div class="tag-row" id="aboutTags">
-              <span class="tag">Education-first</span>
-              <span class="tag teal">Security-aware</span>
-              <span class="tag grey">AI-verified workflow</span>
-            </div>
-          </article>
-
-          <div class="card reveal">
-            <h3 class="card-title">Strengths &amp; Interests</h3>
-            <div class="grid-2 grid-2-tight">
-              <div>
-                <h4 class="mini-head">Strengths</h4>
-                <ul class="tick-list" id="aboutStrengths"></ul>
-              </div>
-              <div>
-                <h4 class="mini-head">Interests</h4>
-                <ul class="tick-list" id="aboutInterests"></ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================= 03 EDUCATION ======================= -->
-    <section class="block" id="education" aria-labelledby="edu-t">
-      <div class="container">
-        <p class="kicker reveal">02 — Education</p>
-        <h2 class="h2 reveal" id="edu-t">Where I studied, and what I focused on.</h2>
-        <p class="sub reveal">Formal study plus the self-directed work that actually taught me to build.</p>
-
-        <div class="grid-2">
-          <div class="card reveal">
-            <h3 class="card-title">Academic Background</h3>
-            <ul class="timeline" id="eduTimeline"></ul>
-          </div>
-
-          <div class="card reveal">
-            <h3 class="card-title">Relevant Coursework</h3>
-            <ul class="tick-list" id="eduCoursework"></ul>
-            
-          </div>
-        </div>
-
-        
-      </div>
-    </section>
-
-    <!-- ======================= 04 SKILLS ======================= -->
-    <section class="block" id="skills" aria-labelledby="skills-t">
-      <div class="container">
-        <p class="kicker reveal">03 — Technical Skills</p>
-        <h2 class="h2 reveal" id="skills-t">Categorised, with honest levels instead of percentages.</h2>
-        <p class="sub reveal" id="skillsNote"></p>
-        <div class="grid-3" id="skillsGrid"></div>
-      </div>
-    </section>
-
-    <!-- ======================= 04 CERTIFICATIONS ======================= -->
-    <section class="block" id="certifications" aria-labelledby="cert-t">
-      <div class="container">
-        <p class="kicker reveal">04 — Certifications</p>
-        <h2 class="h2 reveal" id="cert-t">Certificates of participation, not licences.</h2>
-        <p class="sub reveal" id="certNote"></p>
-        <div class="grid-2" id="certificationsGrid"></div>
-      </div>
-    </section>
-
-    <!-- ======================= 05 PROJECTS ======================= -->
-    <section class="block" id="projects" aria-labelledby="proj-t">
-      <div class="container">
-        <p class="kicker reveal">05 — Projects</p>
-        <h2 class="h2 reveal" id="proj-t">Case studies, not screenshots.</h2>
-        <p class="sub reveal">
-          Each project opens into a full case study: the problem, what I built, my role,
-          the process, the challenges, and what I learned.
-        </p>
-
-        
-
-        <div id="projectsList"></div>
-      </div>
-    </section>
-
-    <!-- ======================= 06 PROBLEM SOLVING ======================= -->
-    <section class="block" id="problem-solving" aria-labelledby="ps-t">
-      <div class="container">
-        <p class="kicker reveal">06 — Problem-Solving Cases</p>
-        <h2 class="h2 reveal" id="ps-t">How I debug when something breaks.</h2>
-        <p class="sub reveal">
-          Every case follows the same trail: symptoms &rarr; investigation &rarr; root cause
-          &rarr; solution &rarr; tools &rarr; lesson.
-        </p>
-
-        
-
-        <div class="acc reveal" id="casesList"></div>
-      </div>
-    </section>
-
-    <!-- ======================= 07 CYBERSECURITY ======================= -->
-    <section class="block" id="security" aria-labelledby="sec-t">
-      <div class="container">
-        <p class="kicker reveal">07 — Cybersecurity Awareness</p>
-        <h2 class="h2 reveal" id="sec-t">Defensive habits, treated as defaults.</h2>
-        <p class="sub reveal" id="secDisclaimer"></p>
-
-        <div class="grid-3" id="secTopics"></div>
-
-        <div class="card reveal" style="margin-top:1.1rem">
-          <span class="tag teal">Implemented, not just read</span>
-          <h3 class="card-title" id="secImplTitle"></h3>
-          <div class="grid-2" id="secImplemented"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================= 08 AI LITERACY ======================= -->
-    <section class="block" id="ai" aria-labelledby="ai-t">
-      <div class="container">
-        <p class="kicker reveal">08 — AI Literacy</p>
-        <h2 class="h2 reveal" id="ai-t">AI assists. I own the outcome.</h2>
-        <p class="sub reveal" id="aiStance"></p>
-
-        <div class="grid-3" id="aiPrinciples"></div>
-
-        <div class="card reveal" style="margin-top:1.1rem">
-          <p class="pull" id="aiRule"></p>
-        </div>
-
-        <h3 class="h3 reveal" style="margin-top:2rem">AI Usage Log</h3>
-        <p class="sub reveal">
-          Every AI-assisted task, what came back, how I checked it, and what I decided.
-        </p>
-
-        <div class="table-wrap reveal">
-          <table>
-            <caption class="sr-only">AI usage log: tool, purpose, output used, verification method, and final human decision</caption>
-            <thead>
-              <tr>
-                <th scope="col">AI Tool</th>
-                <th scope="col">Purpose / Task</th>
-                <th scope="col">Output Used</th>
-                <th scope="col">Verification</th>
-                <th scope="col">Human Decision</th>
-              </tr>
-            </thead>
-            <tbody id="aiLogBody"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================= 09 PRESENCE ======================= -->
-    <section class="block" id="presence" aria-labelledby="pres-t">
-      <div class="container">
-        <p class="kicker reveal">09 — Professional Presence</p>
-        <h2 class="h2 reveal" id="pres-t">Where recruiters can find me.</h2>
-        <p class="sub reveal">My public profiles, kept consistent with everything else on this page.</p>
-        <div class="presence-grid" id="presenceGrid"></div>
-      </div>
-    </section>
-
-    <!-- ======================= 10 RESUME ======================= -->
-    <section class="block" id="resume" aria-labelledby="res-t">
-      <div class="container">
-        <p class="kicker reveal">10 — Resume</p>
-        <h2 class="h2 reveal" id="res-t">One document, recruiter-ready.</h2>
-        <p class="sub reveal">A single-page PDF is best for recruiters, panelists, and internship coordinators.</p>
-        <div id="resumeArea"></div>
-      </div>
-    </section>
-
-    <!-- ======================= 11 CAREER ======================= -->
-    <section class="block" id="career" aria-labelledby="car-t">
-      <div class="container">
-        <p class="kicker reveal">11 — Career Plan</p>
-        <h2 class="h2 reveal" id="car-t">Where I am going, step by step.</h2>
-        <p class="sub reveal"><strong style="color:var(--text)">Target position:</strong> <span id="careerTarget"></span></p>
-
-        <div class="card reveal roadmap" id="careerRoadmap"></div>
-
-        <div class="card reveal" style="margin-top:1.1rem">
-          <h3 class="card-title">What I am actively learning</h3>
-          <ul class="tick-list" id="careerLearning"></ul>
-          
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================= 12 REFLECTION ======================= -->
-    <section class="block" id="reflection" aria-labelledby="ref-t">
-      <div class="container">
-        <p class="kicker reveal">12 — Final Reflection</p>
-        <h2 class="h2 reveal" id="ref-t">What building this taught me.</h2>
-        <div class="card reveal">
-          <div class="reflection" id="reflectionBody"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================= 13 CONTACT ======================= -->
-    <section class="block" id="contact" aria-labelledby="con-t">
-      <div class="container">
-        <p class="kicker reveal">13 — Contact</p>
-        <h2 class="h2 reveal" id="con-t">Let&rsquo;s talk about your team&rsquo;s problems.</h2>
-        <p class="sub reveal" id="contactIntro"></p>
-
-        <div class="contact-grid">
-          <div class="card reveal">
-            <h3 class="card-title">Direct channels</h3>
-            <ul class="channel-list" id="contactChannels"></ul>
-            <hr class="rule" />
-            <p class="hint">
-              For recruiters: share the role, the stack, and the location and I&rsquo;ll reply with
-              relevant project links and availability.
-            </p>
-            <p class="hint">
-              I reply from the Philippines, and I do not publish a residential address.
-            </p>
-          </div>
-
-          <form class="card reveal" id="contactForm" action="api/contact.php" method="post" novalidate aria-label="Contact form">
-            <!-- Real server-side delivery. Success is only reported when the
-                 mail service confirms it accepted the message. -->
-            <input type="hidden" name="_subject" value="Portfolio inquiry" />
-            <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-
-            <div class="form-notice" id="formNotice" hidden>
-              <strong>The contact form is not connected yet.</strong>
-              Messages cannot be sent from this host right now. Please use
-              <a id="noticeLinkedin" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              and I will reply there.
-            </div>
-
-            <div class="field" data-field="name">
-              <label for="f-name">Name</label>
-              <input id="f-name" name="name" type="text" placeholder="Your full name" autocomplete="name" required />
-              <p class="error">Please enter your name.</p>
-            </div>
-
-            <div class="field" data-field="email">
-              <label for="f-email">Email</label>
-              <input id="f-email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required />
-              <p class="error">Enter a valid email address.</p>
-            </div>
-
-            <div class="field" data-field="subject">
-              <label for="f-subject">Subject</label>
-              <input id="f-subject" name="subject" type="text" placeholder="Internship / Junior role / Project inquiry" required />
-              <p class="error">Please add a subject.</p>
-            </div>
-
-            <div class="field" data-field="message">
-              <label for="f-message">Message</label>
-              <textarea id="f-message" name="message" placeholder="Hi — I saw your project on&hellip; I'd like to discuss&hellip;" required></textarea>
-              <p class="hint">At least 10 characters. Please do not include sensitive information.</p>
-              <p class="error">Message needs at least 10 characters.</p>
-            </div>
-
-            <button class="btn btn-primary" type="submit" id="sendBtn" style="width:100%">Send Message</button>
-            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
-            <p class="hint" id="formNote"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <button id="toTop" type="button" aria-label="Back to top" title="Back to top">&#8593;</button>
-
-  <footer>
-    <div class="container foot">
-      <span>
-        &copy; <span id="year">2026</span> Prince Carl Albero &middot;
-        Built with vanilla HTML, CSS &amp; JavaScript &middot;
-        <span class="mono">content.js</span> drives all content
-      </span>
-      <nav aria-label="Footer">
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-        <a id="footGithub" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a id="footLinkedin" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </nav>
+    <div class="profile-wrapper" id="profileWrapper">
+      <button id="profileBtn" class="profile-btn" aria-haspopup="true" aria-expanded="false">☰</button>
+      <ul id="profileMenu" class="profile-menu">
+        <li><a href="profile.html" class="profile-item">👤 My Profile</a></li>
+        <li><a href="login.html" id="logoutBtn" class="profile-item">➜] Logout</a></li>
+      </ul>
     </div>
-  </footer>
+  </nav>
+
+  <!-- ===== HOME SECTION ===== -->
+<section id="home" class="home-hero">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <p class="hero-small">WELCOME TO</p>
+
+    <h1>Aria's Cafe</h1>
+
+    <p class="hero-subtitle">
+      Fresh Coffee. Delicious Moments. ❤️
+    </p>
+
+    <p class="hero-description">
+      Start your day with the perfect cup of coffee
+      and enjoy delicious treats made for you.
+    </p>
+
+    <div class="hero-buttons">
+      <button onclick="window.location.href='menu.html'" class="hero-btn">
+        ☕ View Our Menu
+      </button>
+
+      <button onclick="window.location.href='reservation.html'" class="hero-btn outline">
+        📅 Make a Reservation
+      </button>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== FEATURED SECTION ===== -->
+<section class="featured-section">
+
+  <div class="section-title">
+    <p>OUR FAVORITES</p>
+    <h2>Something Delicious Awaits You</h2>
+    <span>☕</span>
+  </div>
+
+  <div class="featured-grid">
+
+    <div class="featured-card">
+      <img src="img/b1.jpg" alt="Fresh Coffee">
+      <div class="featured-info">
+        <h3>Classic Milk Tea</h3>
+        <p>
+          Enjoy a creamy and refreshing milk tea made with rich tea, smooth milk, and delicious pearls.
+        </p>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <img src="img/b3.jpg" alt="Fresh Pastries">
+      <div class="featured-info">
+        <h3>Fresh Pastries</h3>
+        <p>
+          Perfectly baked treats to pair with your favorite drink.
+        </p>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <img src="img/b4.jpg" alt="Cozy Cafe">
+      <div class="featured-info">
+        <h3>Cozy Atmosphere</h3>
+        <p>
+          Relax, enjoy your coffee, and make wonderful memories.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
 
   
 
-  <script src="content.js"></script>
-  <script src="main.js"></script>
-  <script src="workbook-data.js"></script>
-  <script src="workbook-viewer.js"></script>
-  <script src="preview-download.js"></script>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-section">
+        <h2>🏫 Branches</h2>
+        <p>Parañaque, Metro Manila</p>
+        <p>Pasay City, Metro Manila</p>
+        <p>Caloocan City, Metro Manila</p>
+      </div>
+
+      <div class="footer-section">
+        <h2>📞 Contact</h2>
+        <p>+63-929-551-5005</p>
+        <p>+63-926-395-8937</p>
+        <p>Email: <a href="mailto:info@datamex.edu.ph">aria@gmail.com.ph</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Aria's Cafe. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="dcsa.js"></script>
 </body>
 </html>
