@@ -16,8 +16,8 @@ const PORTFOLIO = {
   "photo": "profile.jpg",
   "photoAlt": "Portrait of Prince Carl Albero",
   "resume": {
-   "available": false,
-   "file": "assets/resume.pdf",
+   "available": true,
+   "file": "resume.pdf",
    "label": "Prince-Carl-Albero-Resume.pdf"
   }
  },
