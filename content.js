@@ -256,7 +256,7 @@ const PORTFOLIO = {
     "localStorage"
    ],
    "repo": "",
-   "demo": "",
+   "demo": "aria-cafe.html",
    "docs": "",
    "demoNote": "Frontend prototype. Data is stored in the browser only, and payments are not processed.",
    "screenshot": "",
