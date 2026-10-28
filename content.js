@@ -6,7 +6,7 @@ const PORTFOLIO = {
   "role": "BSIT Student / Technical Support",
   "availability": "Open to internship / entry-level roles",
   "location": "Philippines",
-  "github": "",
+  "github": "https://github.com/Beccadere",
   "linkedin": "",
   "portfolioRepo": "https://github.com/Beccadere/Portfolio_Prince_Carl",
   "email": "neferrimuru@gmail.com",
