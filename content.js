@@ -8,7 +8,7 @@ const PORTFOLIO = {
   "location": "Philippines",
   "github": "",
   "linkedin": "",
-  "portfolioRepo": "",
+  "portfolioRepo": "https://github.com/Beccadere/Portfolio_Prince_Carl",
   "email": "neferrimuru@gmail.com",
   "phone": "",
   "showEmail": true,
