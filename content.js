@@ -128,7 +128,16 @@ const PORTFOLIO = {
     "icon": "⑂",
     "items": [
      "Git / GitHub (learning)"
-    ]
+    ],
+    "evidence": {
+ "title": "Evidence: this portfolio's repository",
+ "points": [
+  "Source code is kept in a public GitHub repository",
+  "Site is published with GitHub Pages from the main branch"
+ ],
+ "link": "https://github.com/Beccadere/Portfolio_Prince_Carl",
+ "linkLabel": "View my GitHub repository"
+}
    },
    {
     "name": "Data Analysis",
