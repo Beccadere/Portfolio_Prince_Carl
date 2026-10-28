@@ -7,7 +7,7 @@ const PORTFOLIO = {
   "availability": "Open to internship / entry-level roles",
   "location": "Philippines",
   "github": "https://github.com/Beccadere",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/nefer-rimuru-13a752447/",
   "portfolioRepo": "https://github.com/Beccadere/Portfolio_Prince_Carl",
   "email": "neferrimuru@gmail.com",
   "phone": "",
