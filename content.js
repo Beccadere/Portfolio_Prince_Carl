@@ -335,26 +335,59 @@ const PORTFOLIO = {
    "screenshot": "assets/projects/case-12-charts.png",
    "lessons": "Averages and charts are only trustworthy after the data is cleaned and cross-checked. A negative correlation shows association, not causation."
   },
-  {
+    {
    "number": 3,
-   "published": false,
-   "title": "Project 3 — Specialization (to be added)",
-   "category": "",
-   "type": "",
-   "role": "",
-   "overview": "",
-   "problem": "",
-   "solution": "",
-   "process": [],
-   "challenges": [],
-   "features": [],
-   "technologies": [],
-   "repo": "",
-   "demo": "",
+   "published": true,
+   "title": "Specialization Project: Personal Portfolio Website",
+   "category": "Web Development",
+   "type": "Specialization project",
+   "role": "I wrote and organized the portfolio's content, tested every section in the browser, and published the site on GitHub Pages. The layout and starter copy were drafted with an AI assistant, which I recorded in the AI usage log on the site, then I edited and checked the result myself.",
+   "overview": "A responsive, single-page portfolio that presents my education, skills, certifications, projects, troubleshooting cases, and career plan in one place for recruiters and internship coordinators.",
+   "problem": "A resume PDF alone cannot show how I work. I needed one honest place where every skill claim is backed by evidence (code, a workbook, or a repository) and where recruiters can contact me.",
+   "solution": "A static site built with vanilla HTML, CSS, and JavaScript. All text lives in one content.js file, so I can update my projects, cases, and certificates without touching the page layout. Each skill shows real evidence, and each project is written as a case study.",
+   "process": [
+    "Outline the sections from the BSIT portfolio guidelines: About, Education, Skills, Certifications, Projects, Cases, Security, AI Literacy, Career Plan, Reflection, Contact",
+    "Separate content from layout by keeping all text in content.js and rendering it with JavaScript",
+    "Style the site with CSS variables so it supports light and dark themes, then add reusable card and grid classes",
+    "Make the layout responsive with a breakpoint that stacks the grids into one column on smaller screens",
+    "Add a contact form with validation and a honeypot field",
+    "Publish the repository with GitHub Pages from the main branch and test every section"
+   ],
+   "challenges": [
+    {
+     "challenge": "Keeping the layout readable on tablets and phones",
+     "solution": "Added a media query at 1020px that stacks the multi-column grids and reorders the profile panel so the photo and name sit above the intro text."
+    },
+    {
+     "challenge": "A contact form on a static site has no backend of its own",
+     "solution": "Validated the fields in JavaScript, added a honeypot field to catch bots, and sent messages through an email relay service. A success message appears only when the service confirms it, so the form never shows a fake success."
+    },
+    {
+     "challenge": "Animations can be uncomfortable for some visitors",
+     "solution": "The scroll-reveal effect checks the visitor's reduced-motion setting and shows everything immediately when motion is not wanted."
+    }
+   ],
+   "features": [
+    "Content-driven pages from a single content.js file",
+    "Light and dark theme through CSS variables",
+    "Responsive layout for desktop, tablet, and phone",
+    "Contact form with validation, honeypot spam check, and no fake success",
+    "Scroll-reveal effect that respects reduced-motion settings",
+    "Real code evidence for each skill, plus an AI usage log"
+   ],
+   "technologies": [
+    "HTML",
+    "CSS",
+        "JavaScript",
+    "Git / GitHub",
+    "GitHub Pages"
+   ],
+   "repo": "https://github.com/Beccadere/Portfolio_Prince_Carl",
+   "demo": "https://beccadere.github.io/Portfolio_Prince_Carl/",
    "docs": "",
-   "demoNote": "",
+   "demoNote": "Live site. The source code is in the public repository.",
    "screenshot": "",
-   "lessons": ""
+   "lessons": "Keeping content separate from layout made updates much faster, because adding a project only means editing one file. I also learned that responsive design, form validation, and accessibility need to be tested, not assumed, and that recording AI use makes it easier to explain what I wrote and what I checked."
   }
  ],
  "cases": [
